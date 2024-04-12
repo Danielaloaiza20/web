@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLITECNICO CHANGE - Sitio Web</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Inicio"onclick="mostrarInicio()">Inicio</a></li>
+                <li><a href="#Servicios"onclick="mostrarServicios()">Servicios</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="banner">
+        <br></br>
+        <br></br>
+        <br></br>
+        <br><h1>Bienvenido a POLITECNICO CHANGE</h1><br/>
+        <p></p>
+    </section>
+    <section id="contenido-Inicio">
+        <h2>inicio</h2>
+        <div>
+            <br></br>
+            
+            <p>contenido de la pagina.</p>
+            
+        </div>
+    </section>
+    <section id="contenido-Servicios" style="display: none;">
+        <h2>Servicios</h2>
+        <div>
+            <label for="monto">Monto a convertir:</label>
+            <input type="number" id="monto" /><br>
+            <button onclick="convertirADolares()">Convertir a Dólares</button><br>
+            <button onclick="convertirAEuros()">Convertir a Euros</button><br>
+            <button onclick="convertirAReal()">Convertir a Real</button><br>
+            <button onclick="colocarOtroValor()">Colocar otro valor</button><br>
+            <div id="resultado"></div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 POLITECNICO CHANGE. Todos los derechos reservados.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
